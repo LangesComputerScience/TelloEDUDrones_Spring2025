@@ -59,8 +59,29 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        sendmsg('battery?')
+
+        sendmsg('forward 200', 8)
+
+        # Commit Message: First Hoop - Stable
+
+        sendmsg('go 205 0 70 100', 8)
+
+        # Commit Message: Second Hoop - Stable
+
+        sendmsg('curve 100 260 0 0 260 0 60', 16)
+
+        # Commit Message: Third Hoop - Stable
+
+        sendmsg('go -250 0 -50 100', 8)
+
+        # Commit Message: Fourth Hoop - Stable
+
+        sendmsg('back 170', 8)
+
+        # Commit Message: Final Hoop - Stable
+
+        sendmsg('go -220 0 50 100', 8)
 
         sendmsg('land')
 
